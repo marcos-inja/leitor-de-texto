@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modificador</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .conteiner1 {
+            background-color: rgb(51, 51, 51);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="barra-cima">
+        <img id="img-inja"src="imgs/wall_inja.png" alt="">
+        <div class="itens">
+            <button class="botao"> Anterior </button>
+            <button class="botao"> Próximo </button>
+        </div>
+    </div>
+
+    <div class="conteiner" id="fundotxt">
+        <p>Não havia ninguém por perto, apenas silêncio. Era tarde da noite,
+            e assim que Meng Hao surgiu do teletransporte, seu corpo brilhou e ele desapareceu.
+            Ele reapareceu em cima de uma árvore ao longe, e então examinou seus arredores.</p>
+
+        <p>O Gigante Selvagem e o Gu La não estavam em lugar algum,
+            o que causou a desaprovação de Meng Hao.</p>
+
+        <p>Resmungando para si mesmo, o papagaio saiu de dentro do manto de Meng Hao.
+            Bateu as asas e cheirou em volta, daí então uma expressão intoxicada apareceu em seu rosto.</p>
+
+        <p>“Há uma aura anciã aqui. Ahh, o Lorde Quinto gosta deste lugar.
+            De repente, sinto vontade de recitar poesia…”</p>
+
+        <p>“Seu pássaro perverso, imoral, sem vergonha! Você acha que vai recitar poesia?
+            Mais como recitar porcaria!” Claro, o sino de gelatina de carne não perderia
+            nenhuma oportunidade de atacar o papagaio. Ele continuou a tagarelar alto.</p>
+
+        <p>Meng Hao varreu a área com seu Sentido Espiritual. Depois de confirmar que não havia nada
+            perigoso nas proximidades, ele removeu a máscara cor de sangue e pegou o pedaço de
+            jade dado a ele por Yan Song. Depois de examiná-lo com cuidado,
+            ele descobriu que continha um mapa, bem como breves introduções das cinco
+            Tribos do Corvo Divindade.</p>
+
+        <p>Meng Hao examinou o mapa, depois olhou para cima e para o longe.</p>
+
+        <p>“Algumas pequenas inconsistências, mas nada demais. Elas pareciam intencionais.
+            Parece que Yan Song não confia tanto em todo mundo afinal.” Meng Hao riu friamente,
+            então produziu a brilhante bola de luz de Li Tian. Ele examinou-a de perto com vários
+            métodos diferentes antes de finalmente interromper o papagaio e a gelatina de carne e
+            pedir sua opinião.</p>
+
+        <p>Esse era o melhor método para obter informações sobre a coisa.
+            O papagaio bateu no peito e depois cuspiu um globo
+            de luz multicolorido que ele examinou antes de afastá-lo.</p>
+
+        <p>“Sem problemas. Não se preocupe, quando o Lorde
+            Quinto entra em ação, um Lorde Quinto equivale a dois!”</p>
+
+        <p>“Dois de você?”, Disse a gelatina de carne complacentemente.
+            “Você tem a habilidade de se dividir em dois? Humph. Você deveria realmente dizer:
+            ‘Quando o Lorde Terceiro entra em ação, um Lorde Terceiro equivale a três!” Seu corpo de repente
+            fez um som de estalo quando ele se transformou em três sinos, todos ligados ao pé do papagaio.</p>
+
+        <p>Os olhos do papagaio se estreitaram com desdém.</p>
+
+        <p>“Você sabe, a razão pela qual eu sou chamado Lorde Quinto é uma alusão ao
+            fato de que eu sou um papagaio. Você sabe o que são papagaios, hein?
+            O último caractere na palavra “papagaio” tem a mesma pronúncia que “quinto”.
+            É por isso que sou o Lorde Quinto. E você? Cadela!”</p> <br><br>
+    </div>
+
+    <div id="editar1" class="editar">
+        <button onclick="mode()"> <img class="icone-editar" id="darkmode"
+                src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE4LjEuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMjQxLjA3MiAyNDEuMDcyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyNDEuMDcyIDI0MS4wNzI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxwYXRoIHN0eWxlPSJmaWxsOiMwMzAxMDQ7IiBkPSJNMjAyLjE2NywxNTYuODU3Yy00NC4yMzYsMC04MC4wODUtMzUuODQyLTgwLjA4NS04MC4wNzhjMC0yOS45MjMsMTYuNDMtNTUuOTUxLDQwLjczMy02OS43MDcNCgkJQzE1MC4wODgsMi40OTgsMTM2LjM3MywwLDEyMi4wODIsMEM1NS41MDYsMCwxLjUzNSw1My45NzEsMS41MzUsMTIwLjUyOGMwLDY2LjU4NCw1My45NzEsMTIwLjU0NCwxMjAuNTQ3LDEyMC41NDQNCgkJYzU3LjI2OSwwLDEwNS4xOC0zOS45MzcsMTE3LjQ1NC05My40ODVDMjI4LjM3NCwxNTMuNDg0LDIxNS42NjUsMTU2Ljg1NywyMDIuMTY3LDE1Ni44NTdMMjAyLjE2NywxNTYuODU3eiIvPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=" /></button>
+        <button onclick="justif('justificar')"> <img class="icone-editar" id="justificar"
+                src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxyZWN0IHk9IjE1Ljg1MiIgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1NiIvPg0KPHJlY3QgeT0iMTU3LjI3NiIgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1NiIvPg0KPHJlY3QgeT0iMjk4LjcwOCIgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1NiIvPg0KPHJlY3QgeT0iNDQwLjE0OCIgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1NiIvPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=" />
+        </button>
+        <button onclick="fontMa()"> <img class="icone-editar"
+                src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGQ9Ik0yMTEuMTM4LDAuMzM2aC0zMS40ODZMMC41NzEsNTEyaDQyLjM1Nmw1NS4yNjktMTU3LjkxMmgxOTIuNjk4TDM0NS4zNzQsNTEyaDQyLjI5MUwyMTEuMTM4LDAuMzM2eiBNMTEyLjE4OCwzMTQuMTENCgkJCWw4My4wNDktMjM3LjI4NWw4MS44NjUsMjM3LjI4NUgxMTIuMTg4eiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KCTxnPg0KCQk8cG9seWdvbiBwb2ludHM9IjQxNy4zNCwwIDMyMy4yNSw5NC4wOSAzNTEuNTE4LDEyMi4zNTggNDE3LjM0LDU2LjUzNyA0ODMuMTYxLDEyMi4zNTggNTExLjQyOSw5NC4wOSAJCSIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K" /></button>
+        <button onclick="fontMe()"> <img class="icone-editar"
+                src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGQ9Ik0xNjMuNzA4LDc0LjMxOWgtMzEuNTU2TDAsNDUxLjg5OWg0Mi40NWwzMy42NTYtOTYuMTYxaDE0Mi4zMDhsMzMuMTc2LDk2LjE2MWg0Mi4zODVMMTYzLjcwOCw3NC4zMTl6IE05MC4xMywzMTUuNjcxDQoJCQlsNTcuNjQyLTE2NC42OTNsNTYuODE5LDE2NC42OTNIOTAuMTN6Ii8+DQoJPC9nPg0KPC9nPg0KPGc+DQoJPGc+DQoJCTxwb2x5Z29uIHBvaW50cz0iNDgzLjY2OSw2MC4xMDEgNDE3LjcsMTI2LjA2OSAzNTEuNzMxLDYwLjEwMSAzMjMuNCw4OC40MzIgNDE3LjcsMTgyLjczMiA1MTIsODguNDMyIAkJIi8+DQoJPC9nPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=" /></button>
+    </div>
+</body>
+<script src="cod.js"></script>
+
+</html>

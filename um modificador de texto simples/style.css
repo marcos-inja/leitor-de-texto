@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+#barra-cima{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(255, 255, 255);
+    border-bottom: 1px solid;
+    border-bottom-color:rgb(175, 175, 175);
+}
+
+#barra-cima img{
+    width: 80px;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.itens{
+    display: flex;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+#barra-cima button{
+    border-radius: 20px;
+    color:  rgb(8, 46, 151);
+    background-color: rgba(50, 82, 18, 0);
+    font-size: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: 10px;
+    height: 30px;
+    margin-top: 3px;
+    border: solid rgb(8, 46, 151);
+    cursor: pointer;
+}
+
+#barra-cima button:hover{
+    /*border: solid rgb(32, 80, 211);
+    box-shadow: 0px 0px 5px rgb(3, 5, 95);*/
+    border: solid rgb(104, 139, 236);
+    box-shadow: 0px 0px 5px rgb(118, 120, 211);
+}
+
+#barra-cima button:focus{
+    outline-style: none;
+}
+
+.conteiner{
+    background-color: white;
+    text-align: justify;
+    width: 60%;
+    margin: auto;
+    padding: 30px;
+    font-size: 16px;
+    line-height: 25px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.editar{
+    border-top: 1px solid;
+    border-top-color:rgb(175, 175, 175);
+    bottom: 0;
+    margin: auto;
+    justify-content: center;
+    position: fixed;
+    display: flex;
+    height: 40px;
+    width: 100%;
+    background-color: white;
+}
+.editar button{
+    background: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: none;
+    margin-left: 3%;
+    margin-right: 3%;
+    cursor: pointer;
+}
+
+.editar button:hover{
+    background-color: rgb(173, 162, 4);
+    filter: invert(100%);
+}
+
+.icone-editar{
+    width: 50%;
+}
+.editar button:focus{
+    outline-style: none;
+}
+
+@media(max-width:767px){
+    .conteiner{
+        width: 95%;
+        padding: 0;
+    }
+    #barra-cima{
+        top: 0;
+    }
+}
