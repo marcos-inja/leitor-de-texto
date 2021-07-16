@@ -1,2 +1,1 @@
-# leitor-de-texto
-Um simples modificar de texto!
+# Um dia vai ser a base de um leitor online haha
